@@ -1,2 +1,2 @@
 # updateMetadata
-Salesforce updateMetadata api sample by python 
+A sample for Salesforce updateMetadata api by python with zeep SOAP client.
