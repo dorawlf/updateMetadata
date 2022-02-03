@@ -7,6 +7,7 @@ class SoapAPIClient:
         username: str,
         password: str
     ):
+        //download from Salesforce API
         client = Client('enterprise.wsdl')
         service = client.create_service(
             '{urn:enterprise.soap.sforce.com}SoapBinding',
@@ -22,6 +23,7 @@ class MetadataAPIClient:
     metadata_server = None
 
     def getservice(self):
+        //download from Salesforce API
         client = Client('metadata.wsdl')
         client._default_soapheaders = {
             'SessionHeader':{"sessionId" : self.session_id}
